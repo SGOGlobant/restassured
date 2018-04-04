@@ -13,42 +13,43 @@ import com.automation.rest.assured.PostsRestAssured;
 import io.restassured.response.ValidatableResponse;
 
 public class RestAssuredTests {
-	
+
 	@Test
 	public void statusCodeValidation() {
-		int statusCode;
+		int statusCode;// Variable que contiene el código de respuesta
+		// Obtnemos el resoruce de posts
 		PostsRestAssured posts = new PostsRestAssured();
 		posts.setResource("/posts");
-		statusCode = posts.statusCode();
-		assertEquals(statusCode, 200);
+		statusCode = posts.statusCode(); // Recuperamos el código de estatus
+		assertEquals(statusCode, 200); // validamos con TestNG que sea 200
 		System.out.println(String.format("%s\t%d", "Status Code Posts:", statusCode));
-
+		// Obtnemos el resource de comments
 		CommentsRestAssured comments = new CommentsRestAssured();
 		comments.setResource("/comments");
 		statusCode = comments.statusCode();
 		assertEquals(statusCode, 200);
 		System.out.println(String.format("%s\t%d", "Status Code Comments:", statusCode));
-
+		// Obtenemos el resource de Albums
 		BaseRestAssured albums = new BaseRestAssured();
 		albums.setResource("/albums");
 		statusCode = albums.statusCode();
 		assertEquals(statusCode, 200);
 		System.out.println(String.format("%s\t%d", "Status Code Albums:", statusCode));
-
+		// Obtenemos el resoruce de photos
 		BaseRestAssured photos = new BaseRestAssured();
-		photos.setResource("/albums");
+		photos.setResource("/photos");
 		statusCode = photos.statusCode();
 		assertEquals(statusCode, 200);
 		System.out.println(String.format("%s\t%d", "Status Code Photos:", statusCode));
-
+		// Obtenemos el resoruce de todos
 		BaseRestAssured todos = new BaseRestAssured();
-		todos.setResource("/albums");
+		todos.setResource("/todos");
 		statusCode = todos.statusCode();
 		assertEquals(statusCode, 200);
 		System.out.println(String.format("%s\t%d", "Status Code Todos:", statusCode));
-
+		// Obtenemos el resoruce de users
 		BaseRestAssured users = new BaseRestAssured();
-		users.setResource("/albums");
+		users.setResource("/users");
 		statusCode = users.statusCode();
 		assertEquals(statusCode, 200);
 		System.out.println(String.format("%s\t%d", "Status Code Users:", statusCode));
@@ -82,6 +83,12 @@ public class RestAssuredTests {
 		comments.getComments(1);
 	}
 
+	/**
+	 * Contiene la direcion de los recuros y la direccion de los esquemas que
+	 * validan el json
+	 * 
+	 * @return
+	 */
 	@DataProvider(name = "getSchemas")
 	public Object[][] getSchemas() {
 		return new Object[][] { { "/posts", "posts-schema.json" }, { "/comments", "comments-schema.json" },
@@ -89,6 +96,11 @@ public class RestAssuredTests {
 				{ "/todos", "todos-schema.json" }, { "/users", "users-schema.json" } };
 	}
 
+	/**
+	 * Contiene la informacion de los nodos 20, 50 y 100 de posts
+	 * 
+	 * @return
+	 */
 	@DataProvider(name = "getIds")
 	public Object[][] getIds() {
 		return new Object[][] { { 20, 2, "doloribus ad provident suscipit at",

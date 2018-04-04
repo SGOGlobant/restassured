@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="11" passed="10">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5345" started-at="2018-04-04T22:32:55Z" finished-at="2018-04-04T22:33:01Z">
+  <suite name="Default suite" duration-ms="7213" started-at="2018-04-04T22:39:47Z" finished-at="2018-04-04T22:39:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5345" started-at="2018-04-04T22:32:55Z" finished-at="2018-04-04T22:33:01Z">
+    <test name="Default test" duration-ms="7213" started-at="2018-04-04T22:39:47Z" finished-at="2018-04-04T22:39:54Z">
       <class name="com.automation.rest.test.RestAssuredTests">
-        <test-method status="PASS" signature="getCommentsTest()[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="getCommentsTest" duration-ms="1808" started-at="2018-04-04T17:32:55Z" finished-at="2018-04-04T17:32:57Z">
+        <test-method status="PASS" signature="getCommentsTest()[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="getCommentsTest" duration-ms="1818" started-at="2018-04-04T17:39:47Z" finished-at="2018-04-04T17:39:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCommentsTest -->
-        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="postByIdTest" duration-ms="623" started-at="2018-04-04T17:32:57Z" data-provider="getIds" finished-at="2018-04-04T17:32:58Z">
+        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="postByIdTest" duration-ms="673" started-at="2018-04-04T17:39:49Z" data-provider="getIds" finished-at="2018-04-04T17:39:49Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@ omnis rerum consequatur expedita quidem cumque explicabo]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postByIdTest -->
-        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="postByIdTest" duration-ms="210" started-at="2018-04-04T17:32:58Z" data-provider="getIds" finished-at="2018-04-04T17:32:58Z">
+        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="postByIdTest" duration-ms="194" started-at="2018-04-04T17:39:49Z" data-provider="getIds" finished-at="2018-04-04T17:39:49Z">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@ adipisci impedit sequi nesciunt quis consectetur]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postByIdTest -->
-        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="postByIdTest" duration-ms="237" started-at="2018-04-04T17:32:58Z" data-provider="getIds" finished-at="2018-04-04T17:32:58Z">
+        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="postByIdTest" duration-ms="224" started-at="2018-04-04T17:39:49Z" data-provider="getIds" finished-at="2018-04-04T17:39:50Z">
           <params>
             <param index="0">
               <value>
@@ -98,7 +98,7 @@ accusamus ratione error aut]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postByIdTest -->
-        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="685" started-at="2018-04-04T17:32:58Z" data-provider="getSchemas" finished-at="2018-04-04T17:32:59Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="633" started-at="2018-04-04T17:39:50Z" data-provider="getSchemas" finished-at="2018-04-04T17:39:50Z">
           <params>
             <param index="0">
               <value>
@@ -114,7 +114,7 @@ accusamus ratione error aut]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="275" started-at="2018-04-04T17:32:59Z" data-provider="getSchemas" finished-at="2018-04-04T17:32:59Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="254" started-at="2018-04-04T17:39:50Z" data-provider="getSchemas" finished-at="2018-04-04T17:39:51Z">
           <params>
             <param index="0">
               <value>
@@ -130,7 +130,7 @@ accusamus ratione error aut]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="176" started-at="2018-04-04T17:32:59Z" data-provider="getSchemas" finished-at="2018-04-04T17:32:59Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="182" started-at="2018-04-04T17:39:51Z" data-provider="getSchemas" finished-at="2018-04-04T17:39:51Z">
           <params>
             <param index="0">
               <value>
@@ -146,7 +146,7 @@ accusamus ratione error aut]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="483" started-at="2018-04-04T17:32:59Z" data-provider="getSchemas" finished-at="2018-04-04T17:33:00Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="531" started-at="2018-04-04T17:39:51Z" data-provider="getSchemas" finished-at="2018-04-04T17:39:51Z">
           <params>
             <param index="0">
               <value>
@@ -162,7 +162,7 @@ accusamus ratione error aut]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="179" started-at="2018-04-04T17:33:00Z" data-provider="getSchemas" finished-at="2018-04-04T17:33:00Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="195" started-at="2018-04-04T17:39:51Z" data-provider="getSchemas" finished-at="2018-04-04T17:39:52Z">
           <params>
             <param index="0">
               <value>
@@ -178,7 +178,7 @@ accusamus ratione error aut]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="162" started-at="2018-04-04T17:33:00Z" data-provider="getSchemas" finished-at="2018-04-04T17:33:00Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="schemaValidationTest" duration-ms="161" started-at="2018-04-04T17:39:52Z" data-provider="getSchemas" finished-at="2018-04-04T17:39:52Z">
           <params>
             <param index="0">
               <value>
@@ -194,46 +194,7 @@ accusamus ratione error aut]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="FAIL" signature="statusCodeValidation()[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="statusCodeValidation" duration-ms="450" started-at="2018-04-04T17:33:00Z" finished-at="2018-04-04T17:33:01Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [100] but found [200]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [100] but found [200]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:370)
-	at org.testng.Assert.assertEquals(Assert.java:380)
-	at com.automation.rest.test.RestAssuredTests.statusCodeValidation(RestAssuredTests.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="statusCodeValidation()[pri:0, instance:com.automation.rest.test.RestAssuredTests@7c16905e]" name="statusCodeValidation" duration-ms="2325" started-at="2018-04-04T17:39:52Z" finished-at="2018-04-04T17:39:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- statusCodeValidation -->

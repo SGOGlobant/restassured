@@ -28,7 +28,7 @@ public class BaseRestAssured {
 	public void setResource(String resource) {
 		this.resource = resource;
 	}
-	
+
 	public String getBaseURI() {
 		return baseURI;
 	}
@@ -49,6 +49,8 @@ public class BaseRestAssured {
 	}
 
 	public ValidatableResponse validateSchema(String urlSchema) {
-		return request.when().get(getResource()).then().assertThat().body(matchesJsonSchemaInClasspath(urlSchema));		
+		// Comparamos que el squema que estamos cargando actualmente corresponda al
+		// esquema del recurso que estamso cargando
+		return request.when().get(getResource()).then().assertThat().body(matchesJsonSchemaInClasspath(urlSchema));
 	}
 }
