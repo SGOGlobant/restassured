@@ -1,6 +1,7 @@
 package com.automation.rest.test;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotNull;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -8,6 +9,8 @@ import org.testng.annotations.Test;
 import com.automation.rest.assured.BaseRestAssured;
 import com.automation.rest.assured.CommentsRestAssured;
 import com.automation.rest.assured.PostsRestAssured;
+
+import io.restassured.response.ValidatableResponse;
 
 public class RestAssuredTests {
 	
@@ -55,7 +58,8 @@ public class RestAssuredTests {
 	public void schemaValidationTest(String pathResource, String schema) {
 		BaseRestAssured resource = new BaseRestAssured();
 		resource.setResource(pathResource);
-		resource.validateSchema(schema);
+		ValidatableResponse response = resource.validateSchema(schema);
+		assertNotNull(response, "El esquema es valido");
 	}
 
 	@Test(dataProvider = "getIds")

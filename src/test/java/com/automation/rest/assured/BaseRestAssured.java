@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import io.restassured.response.Response;
+import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
 public class BaseRestAssured {
@@ -47,7 +48,7 @@ public class BaseRestAssured {
 		return response.getStatusCode();
 	}
 
-	public void validateSchema(String urlSchema) {
-		request.when().get(getResource()).then().assertThat().body(matchesJsonSchemaInClasspath(urlSchema));
+	public ValidatableResponse validateSchema(String urlSchema) {
+		return request.when().get(getResource()).then().assertThat().body(matchesJsonSchemaInClasspath(urlSchema));		
 	}
 }

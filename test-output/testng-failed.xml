@@ -5,7 +5,7 @@
     <classes>
       <class name="com.automation.rest.test.RestAssuredTests">
         <methods>
-          <include name="getCommentsTest"/>
+          <include name="statusCodeValidation"/>
         </methods>
       </class> <!-- com.automation.rest.test.RestAssuredTests -->
     </classes>
