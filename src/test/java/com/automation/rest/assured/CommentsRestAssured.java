@@ -4,7 +4,7 @@ import static io.restassured.RestAssured.given;
 
 public class CommentsRestAssured extends BaseRestAssured{
 	
-	public void getComments() {
-		given().params("postId", 1).when().get(getBaseURI()+getResource()).body().print();
+	public void getComments(int postId) {
+		given().params("postId", postId).when().get(getBaseURI()+getResource()).body().print();
 	}
 }

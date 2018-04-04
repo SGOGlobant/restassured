@@ -72,10 +72,10 @@ public class RestAssuredTests {
 	public void getCommentsTest() {
 		PostsRestAssured posts = new PostsRestAssured();
 		posts.setResource("/posts");
-		posts.getPosts();
+		posts.getPosts(1);
 		CommentsRestAssured comments = new CommentsRestAssured();
 		comments.setResource("/comments");
-		comments.getComments();
+		comments.getComments(1);
 	}
 
 	@DataProvider(name = "getSchemas")

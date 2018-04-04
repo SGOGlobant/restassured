@@ -57,10 +57,10 @@ public class PostsRestAssured extends BaseRestAssured {
 			.and()
 			.body("title", Matchers.is(getTitle()))
 			.and()
-			.body("body", Matchers.is(getBody()));	
+			.body("body", Matchers.is(getBody()));
 	}
 	
-	public void getPosts() {
-		given().params("userId", 1).when().get(getBaseURI()+getResource()).body().print();
+	public void getPosts(int userdId) {
+		given().params("userId", userdId).when().get(getBaseURI()+getResource()).body().print();
 	}
 }
