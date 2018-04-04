@@ -1,11 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="com.automation.rest.AppTest" duration-ms="2" started-at="2018-04-03T18:13:52Z" finished-at="2018-04-03T18:13:52Z">
+  <suite name="Surefire suite" duration-ms="6919" started-at="2018-04-04T21:43:57Z" finished-at="2018-04-04T21:44:04Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="2" started-at="2018-04-03T18:13:52Z" finished-at="2018-04-03T18:13:52Z">
-    </test> <!-- Command line test -->
-  </suite> <!-- com.automation.rest.AppTest -->
+    <test name="Surefire test" duration-ms="6919" started-at="2018-04-04T21:43:57Z" finished-at="2018-04-04T21:44:04Z">
+      <class name="com.automation.rest.test.RestAssuredTests">
+        <test-method status="PASS" signature="getCommentsTest()[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="getCommentsTest" duration-ms="1615" started-at="2018-04-04T16:43:57Z" finished-at="2018-04-04T16:43:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCommentsTest -->
+        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="postByIdTest" duration-ms="637" started-at="2018-04-04T16:43:59Z" data-provider="getIds" finished-at="2018-04-04T16:43:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[doloribus ad provident suscipit at]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qui consequuntur ducimus possimus quisquam amet similique
+suscipit porro ipsam amet
+eos veritatis officiis exercitationem vel fugit aut necessitatibus totam
+omnis rerum consequatur expedita quidem cumque explicabo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postByIdTest -->
+        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="postByIdTest" duration-ms="185" started-at="2018-04-04T16:43:59Z" data-provider="getIds" finished-at="2018-04-04T16:44:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[repellendus qui recusandae incidunt voluptates tenetur qui omnis exercitationem]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[error suscipit maxime adipisci consequuntur recusandae
+voluptas eligendi et est et voluptates
+quia distinctio ab amet quaerat molestiae et vitae
+adipisci impedit sequi nesciunt quis consectetur]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postByIdTest -->
+        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="postByIdTest" duration-ms="277" started-at="2018-04-04T16:44:00Z" data-provider="getIds" finished-at="2018-04-04T16:44:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[at nam consequatur ea labore ea harum]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cupiditate quo est a modi nesciunt soluta
+ipsa voluptas error itaque dicta in
+autem qui minus magnam et distinctio eum
+accusamus ratione error aut]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postByIdTest -->
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="schemaValidationTest" duration-ms="667" started-at="2018-04-04T16:44:00Z" data-provider="getSchemas" finished-at="2018-04-04T16:44:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/posts]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[posts-schema.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaValidationTest -->
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="schemaValidationTest" duration-ms="252" started-at="2018-04-04T16:44:00Z" data-provider="getSchemas" finished-at="2018-04-04T16:44:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/comments]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[comments-schema.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaValidationTest -->
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="schemaValidationTest" duration-ms="199" started-at="2018-04-04T16:44:01Z" data-provider="getSchemas" finished-at="2018-04-04T16:44:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/albums]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[albums-schema.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaValidationTest -->
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="schemaValidationTest" duration-ms="581" started-at="2018-04-04T16:44:01Z" data-provider="getSchemas" finished-at="2018-04-04T16:44:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/photos]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[photos-schema.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaValidationTest -->
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="schemaValidationTest" duration-ms="159" started-at="2018-04-04T16:44:02Z" data-provider="getSchemas" finished-at="2018-04-04T16:44:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/todos]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[todos-schema.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaValidationTest -->
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="schemaValidationTest" duration-ms="162" started-at="2018-04-04T16:44:02Z" data-provider="getSchemas" finished-at="2018-04-04T16:44:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/users]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[users-schema.json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaValidationTest -->
+        <test-method status="PASS" signature="statusCodeValidation()[pri:0, instance:com.automation.rest.test.RestAssuredTests@61a485d2]" name="statusCodeValidation" duration-ms="2182" started-at="2018-04-04T16:44:02Z" finished-at="2018-04-04T16:44:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- statusCodeValidation -->
+      </class> <!-- com.automation.rest.test.RestAssuredTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

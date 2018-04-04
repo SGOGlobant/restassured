@@ -1,1 +1,4 @@
-C:\Users\sergio.garcia\Documents\rest-assured\rest-assured\src\test\java\com\automation\rest\AppTest.java
+C:\Users\sergio.garcia\Documents\rest-assured\rest-assured\src\test\java\com\automation\rest\assured\BaseRestAssured.java
+C:\Users\sergio.garcia\Documents\rest-assured\rest-assured\src\test\java\com\automation\rest\assured\CommentsRestAssured.java
+C:\Users\sergio.garcia\Documents\rest-assured\rest-assured\src\test\java\com\automation\rest\assured\PostsRestAssured.java
+C:\Users\sergio.garcia\Documents\rest-assured\rest-assured\src\test\java\com\automation\rest\test\RestAssuredTests.java
