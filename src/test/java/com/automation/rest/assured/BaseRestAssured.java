@@ -1,7 +1,7 @@
 package com.automation.rest.assured;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static com.jayway.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
@@ -51,6 +51,7 @@ public class BaseRestAssured {
 	public ValidatableResponse validateSchema(String urlSchema) {
 		// Comparamos que el squema que estamos cargando actualmente corresponda al
 		// esquema del recurso que estamso cargando
+		System.out.println(this.getClass().getResource("/").getPath());  
 		return request.when().get(getResource()).then().assertThat().body(matchesJsonSchemaInClasspath(urlSchema));
 	}
 }

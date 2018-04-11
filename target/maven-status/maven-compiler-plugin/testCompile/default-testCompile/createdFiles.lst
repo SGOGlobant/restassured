@@ -1,3 +1,4 @@
+com\automation\rest\test\RestAssuredTests.class
 com\automation\rest\assured\CommentsRestAssured.class
 com\automation\rest\assured\PostsRestAssured.class
 com\automation\rest\assured\BaseRestAssured.class

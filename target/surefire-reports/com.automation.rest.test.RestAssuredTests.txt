@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.automation.rest.test.RestAssuredTests
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 6.338 s <<< FAILURE! - in com.automation.rest.test.RestAssuredTests
-schemaValidationTest(com.automation.rest.test.RestAssuredTests)  Time elapsed: 0.124 s  <<< FAILURE!
-java.lang.IllegalArgumentException: Schema to use cannot be null
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-
-schemaValidationTest(com.automation.rest.test.RestAssuredTests)  Time elapsed: 0.135 s  <<< FAILURE!
-java.lang.IllegalArgumentException: Schema to use cannot be null
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-
-schemaValidationTest(com.automation.rest.test.RestAssuredTests)  Time elapsed: 0.157 s  <<< FAILURE!
-java.lang.IllegalArgumentException: Schema to use cannot be null
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-
-schemaValidationTest(com.automation.rest.test.RestAssuredTests)  Time elapsed: 0.163 s  <<< FAILURE!
-java.lang.IllegalArgumentException: Schema to use cannot be null
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-
-schemaValidationTest(com.automation.rest.test.RestAssuredTests)  Time elapsed: 0.136 s  <<< FAILURE!
-java.lang.IllegalArgumentException: Schema to use cannot be null
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-
-schemaValidationTest(com.automation.rest.test.RestAssuredTests)  Time elapsed: 0.113 s  <<< FAILURE!
-java.lang.IllegalArgumentException: Schema to use cannot be null
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.286 s - in com.automation.rest.test.RestAssuredTests

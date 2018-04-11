@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="6" total="11" passed="5">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="5739" started-at="2018-04-11T21:37:21Z" finished-at="2018-04-11T21:37:27Z">
+  <suite name="Surefire suite" duration-ms="5719" started-at="2018-04-11T22:34:36Z" finished-at="2018-04-11T22:34:41Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="5739" started-at="2018-04-11T21:37:21Z" finished-at="2018-04-11T21:37:27Z">
+    <test name="Surefire test" duration-ms="5719" started-at="2018-04-11T22:34:36Z" finished-at="2018-04-11T22:34:41Z">
       <class name="com.automation.rest.test.RestAssuredTests">
-        <test-method status="PASS" signature="getCommentsTest()[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="getCommentsTest" duration-ms="1559" started-at="2018-04-11T16:37:21Z" finished-at="2018-04-11T16:37:23Z">
+        <test-method status="PASS" signature="getCommentsTest()[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="getCommentsTest" duration-ms="1487" started-at="2018-04-11T17:34:36Z" finished-at="2018-04-11T17:34:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCommentsTest -->
-        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="postByIdTest" duration-ms="667" started-at="2018-04-11T16:37:23Z" data-provider="getIds" finished-at="2018-04-11T16:37:24Z">
+        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="postByIdTest" duration-ms="574" started-at="2018-04-11T17:34:37Z" data-provider="getIds" finished-at="2018-04-11T17:34:38Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@ omnis rerum consequatur expedita quidem cumque explicabo]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postByIdTest -->
-        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="postByIdTest" duration-ms="155" started-at="2018-04-11T16:37:24Z" data-provider="getIds" finished-at="2018-04-11T16:37:24Z">
+        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="postByIdTest" duration-ms="179" started-at="2018-04-11T17:34:38Z" data-provider="getIds" finished-at="2018-04-11T17:34:38Z">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@ adipisci impedit sequi nesciunt quis consectetur]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postByIdTest -->
-        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="postByIdTest" duration-ms="187" started-at="2018-04-11T16:37:24Z" data-provider="getIds" finished-at="2018-04-11T16:37:24Z">
+        <test-method status="PASS" signature="postByIdTest(int, int, java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="postByIdTest" duration-ms="160" started-at="2018-04-11T17:34:38Z" data-provider="getIds" finished-at="2018-04-11T17:34:38Z">
           <params>
             <param index="0">
               <value>
@@ -98,7 +98,7 @@ accusamus ratione error aut]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postByIdTest -->
-        <test-method status="FAIL" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="schemaValidationTest" duration-ms="111" started-at="2018-04-11T16:37:24Z" data-provider="getSchemas" finished-at="2018-04-11T16:37:24Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="schemaValidationTest" duration-ms="515" started-at="2018-04-11T17:34:38Z" data-provider="getSchemas" finished-at="2018-04-11T17:34:39Z">
           <params>
             <param index="0">
               <value>
@@ -107,59 +107,14 @@ accusamus ratione error aut]]>
             </param>
             <param index="1">
               <value>
-                <![CDATA[resoruces/posts-schema.json]]>
+                <![CDATA[posts-schema.json]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Schema to use cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at com.automation.rest.assured.BaseRestAssured.validateSchema(BaseRestAssured.java:54)
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="FAIL" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="schemaValidationTest" duration-ms="142" started-at="2018-04-11T16:37:24Z" data-provider="getSchemas" finished-at="2018-04-11T16:37:24Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="schemaValidationTest" duration-ms="197" started-at="2018-04-11T17:34:39Z" data-provider="getSchemas" finished-at="2018-04-11T17:34:39Z">
           <params>
             <param index="0">
               <value>
@@ -168,59 +123,14 @@ accusamus ratione error aut]]>
             </param>
             <param index="1">
               <value>
-                <![CDATA[resoruces/comments-schema.json]]>
+                <![CDATA[comments-schema.json]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Schema to use cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at com.automation.rest.assured.BaseRestAssured.validateSchema(BaseRestAssured.java:54)
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="FAIL" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="schemaValidationTest" duration-ms="156" started-at="2018-04-11T16:37:24Z" data-provider="getSchemas" finished-at="2018-04-11T16:37:24Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="schemaValidationTest" duration-ms="126" started-at="2018-04-11T17:34:39Z" data-provider="getSchemas" finished-at="2018-04-11T17:34:39Z">
           <params>
             <param index="0">
               <value>
@@ -229,59 +139,14 @@ accusamus ratione error aut]]>
             </param>
             <param index="1">
               <value>
-                <![CDATA[resoruces/albums-schema.json]]>
+                <![CDATA[albums-schema.json]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Schema to use cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at com.automation.rest.assured.BaseRestAssured.validateSchema(BaseRestAssured.java:54)
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="FAIL" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="schemaValidationTest" duration-ms="164" started-at="2018-04-11T16:37:24Z" data-provider="getSchemas" finished-at="2018-04-11T16:37:25Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="schemaValidationTest" duration-ms="508" started-at="2018-04-11T17:34:39Z" data-provider="getSchemas" finished-at="2018-04-11T17:34:39Z">
           <params>
             <param index="0">
               <value>
@@ -290,59 +155,14 @@ accusamus ratione error aut]]>
             </param>
             <param index="1">
               <value>
-                <![CDATA[resoruces/photos-schema.json]]>
+                <![CDATA[photos-schema.json]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Schema to use cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at com.automation.rest.assured.BaseRestAssured.validateSchema(BaseRestAssured.java:54)
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="FAIL" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="schemaValidationTest" duration-ms="131" started-at="2018-04-11T16:37:25Z" data-provider="getSchemas" finished-at="2018-04-11T16:37:25Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="schemaValidationTest" duration-ms="147" started-at="2018-04-11T17:34:39Z" data-provider="getSchemas" finished-at="2018-04-11T17:34:40Z">
           <params>
             <param index="0">
               <value>
@@ -351,59 +171,14 @@ accusamus ratione error aut]]>
             </param>
             <param index="1">
               <value>
-                <![CDATA[resoruces/todos-schema.json]]>
+                <![CDATA[todos-schema.json]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Schema to use cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at com.automation.rest.assured.BaseRestAssured.validateSchema(BaseRestAssured.java:54)
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="FAIL" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="schemaValidationTest" duration-ms="117" started-at="2018-04-11T16:37:25Z" data-provider="getSchemas" finished-at="2018-04-11T16:37:25Z">
+        <test-method status="PASS" signature="schemaValidationTest(java.lang.String, java.lang.String)[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="schemaValidationTest" duration-ms="151" started-at="2018-04-11T17:34:40Z" data-provider="getSchemas" finished-at="2018-04-11T17:34:40Z">
           <params>
             <param index="0">
               <value>
@@ -412,59 +187,14 @@ accusamus ratione error aut]]>
             </param>
             <param index="1">
               <value>
-                <![CDATA[resoruces/users-schema.json]]>
+                <![CDATA[users-schema.json]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Schema to use cannot be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
-	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
-	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
-	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
-	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
-	at com.automation.rest.assured.BaseRestAssured.validateSchema(BaseRestAssured.java:54)
-	at com.automation.rest.test.RestAssuredTests.schemaValidationTest(RestAssuredTests.java:62)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaValidationTest -->
-        <test-method status="PASS" signature="statusCodeValidation()[pri:0, instance:com.automation.rest.test.RestAssuredTests@4e04a765]" name="statusCodeValidation" duration-ms="2339" started-at="2018-04-11T16:37:25Z" finished-at="2018-04-11T16:37:27Z">
+        <test-method status="PASS" signature="statusCodeValidation()[pri:0, instance:com.automation.rest.test.RestAssuredTests@17550481]" name="statusCodeValidation" duration-ms="1659" started-at="2018-04-11T17:34:40Z" finished-at="2018-04-11T17:34:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- statusCodeValidation -->
